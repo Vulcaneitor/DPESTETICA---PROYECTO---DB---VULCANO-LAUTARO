@@ -5,7 +5,7 @@
 h1{ font-size: 3.5em;}
 h2{ font-size: 2.7em;}
 h3{ font-size: 2em;}
-p{ font-size: 1.25em;}
+p{ font-size: 1em;}
 ul{ list-style: none;
 }
 body {
@@ -23,8 +23,6 @@ body {
     display: flex;
     align-items: center;
 }
-.navegador-texto
-
 nav img{
     float: right;}
     
@@ -49,20 +47,11 @@ button{
     border: 2px solid black;
     box-shadow: 2px 2px 10px black;
     color: white; 
-    background-color: #A63EC5;
+    background-color: black;
     
 }
-
-button:hover{
-    background-color: #A63EC5;
-    
-}
-/* .container{
-    max-width: 1400px;
-    margin: auto;
-} */
 header{
-    background-color: #A63EC5;
+    background-color: #B38CA3;
     margin: 0;
     padding: 0px;
 
@@ -107,7 +96,7 @@ header a:hover{
     text-align: center;
     padding: 10px 12px;
     font-weight: bold;
-    color: #A63EC5;
+    color: #f7f7f7;
 }
     #laser p{
         text-align: center;
@@ -116,7 +105,7 @@ header a:hover{
         color: rgb(0, 0, 0);
 }
 #nuestros-profesionales{
-    background-color: #46244C;
+    background-color: #f7f7f7;
     color: white;
     text-align: center;
 }
@@ -170,9 +159,14 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    text-align: center;
+    padding: 1px;
+    
+text-decoration: none;
 }
-footer p{
-    margin: 0px;}
+.comunicate{
+  margin: 30px;
+}
 
     .profesionales{
         display: grid;
@@ -231,9 +225,6 @@ footer p{
 
 }
 
-@keyframes laser-p {
-0% {background-color: blue;}
-50% {background-color: blueviolet;}
-100% {background-color: aqua;}
+
     
-}
+
