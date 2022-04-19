@@ -1,0 +1,75 @@
+$ce:center;
+$blanco: white;
+$blank:  #f6f6f6; 
+$negro: black;
+
+
+#nuestros-profesionales{
+background-color: $blank;
+color: $blanco;
+text-align: center;
+font-weight: bold;
+}
+#nuestros{
+color: $negro;
+}
+
+#nuestros-profesionales .container{
+    padding: 70px 10px;
+    }
+    #profesionales h2{
+        margin-top: 0;  
+        font-size: 3,5em;
+    }
+    #profesionales h3{
+        margin-top: 0;   
+    }
+    
+    #nuestros-profesionales .carta1{
+        background-position: $ce $ce;
+        background-size: cover;
+        padding: 50px;
+        margin: 12px;
+        border-radius: 20px;
+    }
+    #nuestros-profesionales .carta2{
+        background-position: $ce $ce;
+        background-size: cover;
+        padding: 50px;
+        margin: 12px;
+        border-radius: 20px;
+    }
+    #nuestros-profesionales .carta3{
+        background-position: $ce $ce;
+        background-size: cover;
+        padding: 50px;
+        margin: 12px;
+        border-radius: 20px;
+    }
+    .carta1:first-child:first-child{
+        background:linear-gradient(  rgba(0, 0, 0, 0.5),   rgba(0, 0, 0, 0.5)),  url("../img/cosmetologa.jpg");
+    }
+    
+    .carta2:nth-child(2){
+        background:linear-gradient(  rgba(0, 0, 0, 0.5),   rgba(0, 0, 0, 0.5)),  url("../img/reiki.jpg");
+    }
+    
+    .carta3:nth-child(3){
+        background:linear-gradient(  rgba(0, 0, 0, 0.5),   rgba(0, 0, 0, 0.5)),  url("../img/masoterapia.jpg");
+    }
+
+.profesionales{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1%;
+    justify-items: $ce;
+    align-items: $ce;
+    grid-area: "carta1 carta2 carta3";
+}
+
+.carta1 { grid-area: 1 / 1 / 2 / 2; 
+     width: 80%;}
+.carta2 { grid-area: 1 / 2 / 2 / 3;    
+     width: 80%; }
+.carta3 { grid-area: 1 / 3 / 2 / 4;    
+     width: 80%; }
