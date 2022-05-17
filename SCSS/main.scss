@@ -3,26 +3,69 @@ $blanco: white;
 $blank:  #f6f6f6; 
 $negro: black;
 $gris: #383737;
-$notangris: #8b8b8b;
+$notangris: #E3E7E3;
 
-h1{ font-size: 3.5em;}
+h1{
+
+    text-align: $ce;
+    padding: 20px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight:bold;
+    color: $negro;
+}
 h2{ font-size: 2.7em;}
 ul{ list-style: none;} 
 
 #hero{
+
     image-orientation: $ce;
     height: 800px;
-    height: 900px;
     background-repeat: no-repeat;
     background:linear-gradient(  rgba(0, 0, 0, 0.5),   rgba(0, 0, 0, 0.5)),  url("../img/hero.jpeg");
     align-items: $ce;
     justify-content: $ce;
     text-align: $ce;
+    margin-top: 40; 
     flex-direction: column;
     height: 90vh;
+    right: 40vh;
     color: $blanco;
     background-size: cover;
     background-position: $ce $ce;
+}
+#hero p{
+    height: 200px;
+    text-align: $ce;
+    padding: 0px;
+    font-weight:bold;
+    color: $blanco;
+}
+#hero h1{
+    margin: 0;
+    height: 200px;
+    text-align: $ce;
+    padding: 50px;
+    font-weight:bold;
+    color: $blanco;
+}
+.img-fluid{
+max-width: 100%; 
+height: auto;
+}
+button{
+    font-size: 3.5em;
+    font-weight: bold;
+    padding: 20px 20px;
+    border-radius: px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 10px black;
+    color: white; 
+    background-color: rgb(69, 67, 67);
+    height: 100px;
+    width: 300px;
+}
+button:hover{
+    background-color: black;
 }
 footer {
     bottom:0;
@@ -42,12 +85,98 @@ footer {
 nav img{
     float: right;
 }
-    
-    
+ 
+#nuestros-profesionales{
+    background-color: #E3E7E3;
+    color: #E3E7E3;
+    text-align: $ce;
+    font-weight: bold;
+    }  
+     
     .contacto{
         background-color: $notangris;
-    
     }
+    #nuestros-profesionales .container{
+        padding: 50px 12px;
+        }
+    
+    #nuestros-profesionales h1{
+        margin-top: 0;  
+        font-size: 3,5em;
+        color: $negro;
+        font-weight:700;}
+        #nuestros-profesionales h3{
+            margin-top: 0;  
+            font-size: 3,5em;
+            color: $blank;
+            font-weight:700;
+        }
+        #nuestros-profesionales p{
+            margin-top: 0;  
+            font-size: 3,5em;
+            color: $blank;
+            font-weight:600;
+        }
+                    .profesionales{
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        grid-column-gap: 1%;
+                        justify-items: center;
+                        align-items: center;
+                        grid-area: "carta1 carta2 carta3";
+                        
+                        #nuestraspro{
+                            text-decoration: solid;
+                            text-decoration-color: $blanco;
+                        }
+                        .profesionales{
+                            display: grid;
+                            grid-template-columns: 1fr 1fr 1fr;
+                            grid-column-gap: 1%;
+                            justify-items: $ce;
+                            align-items: $ce;
+                            grid-area: "carta1 carta2 carta3";
+                        }
+                    }
+                    .carta1:first-child:first-child{
+                        background:linear-gradient(  rgba(0, 0, 0, 0.5),   rgba(0, 0, 0, 0.5)),  url("../img/cosmetologa.jpg");
+                    }
+                    
+                    .carta2:nth-child(2){
+                        background:linear-gradient(  rgba(0, 0, 0, 0.5),   rgba(0, 0, 0, 0.5)),  url("../img/reiki.jpg");
+                    }
+                    
+                    .carta3:nth-child(3){
+                        background:linear-gradient(  rgba(0, 0, 0, 0.5),   rgba(0, 0, 0, 0.5)),  url("../img/masoterapia.jpg");
+                    }
+    #nuestros-profesionales .carta1{
+        background-position: $ce $ce;
+        background-size: cover;
+        padding: 50px;
+        margin: 12px;
+        border-radius: 20px;
+    }
+    #nuestros-profesionales .carta2{
+        background-position: c$ce $ce;
+        background-size: cover;
+        padding: 50px;
+        margin: 12px;
+        border-radius: 20px;
+    }
+    #nuestros-profesionales .carta3{
+        background-position: $ce $ce;
+        background-size: cover;
+        padding: 50px;
+        margin: 12px;
+        border-radius: 20px;
+    }
+    .carta1 { grid-area: 1 / 1 / 2 / 2; 
+        width: 80%;}
+        .carta2 { grid-area: 1 / 2 / 2 / 3;    
+            width: 80%; }
+            .carta3 { grid-area: 1 / 3 / 2 / 4;    
+                width: 80%; }
+                
 .header {
     color: $gris;
     font-weight: bold;
@@ -99,88 +228,31 @@ button{
     background-color: rgb(69, 67, 67);
     height: 100px;
     width: 300px;
-    
+}
 button:hover{
     background-color: $negro;
 
-}
-
-#nuestros-profesionales{
-background-color: $blank;
-color: $blanco;
-text-align: $ce;
-font-weight: bold;
 }
 #nuestros{
 color: $negro;
 }
 
-#nuestros-profesionales .container{
-    padding: 70px 10px;
-    }
-    #profesionales h2{
-        margin-top: 0;  
-        font-size: 3,5em;
-    }
-    #profesionales h3{
-        margin-top: 0;   
-    }
-    
-    #nuestros-profesionales .carta1{
-        background-position: $ce $ce;
-        background-size: cover;
-        padding: 50px;
-        margin: 12px;
-        border-radius: 20px;
-    }
-    #nuestros-profesionales .carta2{
-        background-position: $ce $ce;
-        background-size: cover;
-        padding: 50px;
-        margin: 12px;
-        border-radius: 20px;
-    }
-    #nuestros-profesionales .carta3{
-        background-position: $ce $ce;
-        background-size: cover;
-        padding: 50px;
-        margin: 12px;
-        border-radius: 20px;
-    }
-    .carta1:first-child:first-child{
-        background:linear-gradient(  rgba(0, 0, 0, 0.5),   rgba(0, 0, 0, 0.5)),  url("../img/cosmetologa.jpg");
-    }
-    
-    .carta2:nth-child(2){
-        background:linear-gradient(  rgba(0, 0, 0, 0.5),   rgba(0, 0, 0, 0.5)),  url("../img/reiki.jpg");
-    }
-    
-    .carta3:nth-child(3){
-        background:linear-gradient(  rgba(0, 0, 0, 0.5),   rgba(0, 0, 0, 0.5)),  url("../img/masoterapia.jpg");
-    }
-    #nuestraspro{
-        text-decoration: solid;
-        text-decoration-color: $negro;
-    }
-.profesionales{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 1%;
-    justify-items: $ce;
-    align-items: $ce;
-    grid-area: "carta1 carta2 carta3";
-}
 #contacto{
-    background-color: $blank;
+    background-color: $notangris;
+
 }
-    #nuestros-profesionales{
-    background-color: $blank;
-    color: $blanco;
-    text-align: $ce;
-    font-weight: bold;
-}
-#nuestros{
+#contacto h3{
+    margin-top: 10px;  
     color: $negro;
+    font-weight:bolder;
+    font-weight:600;
+}
+#contacto p{
+    margin-top: 25px;  
+}
+
+#nuestros{
+    color: $blank;
 }
 
 .carta1 { grid-area: 1 / 1 / 2 / 2; 
@@ -195,7 +267,6 @@ color: $negro;
         text-decoration: none;
         font-weight: bold;
         color: $negro;}
-    }
     #laser h2{
         text-align: $ce;
         padding: 10px 12px;
@@ -226,7 +297,7 @@ color: $negro;
             }
             
             #laser .img-container{
-                background-image: url("img/depilacion_laser.png");
+                background-image: url("../img/depilacion_laser.png");
                 background-size: cover;
                 background-position: $ce $ce;}
             
